@@ -24,7 +24,6 @@ class TerminalGrid{
         transform-origin: 0px 0px;
         transform: scale(${hValue * fAR / (100 * x)}, ${hValue / (100 * y)});
         `
-        document.body.style.overflow = "auto !important"
     }
     reshape(grid){
         if(grid.length == this.y && typeof grid[0] == "object")return grid
