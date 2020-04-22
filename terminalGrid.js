@@ -22,7 +22,7 @@ class TerminalGrid{
         border: none;
         white-space: pre;
         transform-origin: 0px 0px;
-        transform: scale(${hValue * fAR / (100 * x)}, ${hValue / (100 * y)});
+        transform: scale(${hValue * fAR / (100 * y)}, ${hValue / (100 * y)});
         `
     }
     reshape(grid){
