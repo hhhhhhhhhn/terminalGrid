@@ -27,7 +27,6 @@ class TerminalGrid{
     }
     reshape(grid){
         if(grid.length == this.y && typeof grid[0] == "object")return grid
-        console.log(typeof grid[0])
         var output = []
         while(grid.length) output.push(grid.splice(0,this.x))
         return output
