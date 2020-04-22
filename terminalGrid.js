@@ -77,4 +77,10 @@ class TerminalGrid{
             this.element.value = this.seq[this.displaying]
         }
     }
+    setCharacter(x, y, char){
+        var index = (this.x + 1) * y + x
+        var str = this.element.value
+        if(index % (this.x + 1) != this.x && index < str.length)
+        this.element.value = str.slice(0, index) + char + str.slice(index + 1)
+    }
 }
